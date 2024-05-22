@@ -8,18 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@types/command-line-args':
-        specifier: ^5.2.3
-        version: 5.2.3
-      '@types/command-line-usage':
-        specifier: ^5.0.4
-        version: 5.0.4
-      '@types/didyoumean':
-        specifier: ^1.2.2
-        version: 1.2.2
-      '@types/node':
-        specifier: ^20.12.12
-        version: 20.12.12
       chalk:
         specifier: ^5.3.0
         version: 5.3.0
@@ -42,9 +30,21 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
     devDependencies:
+      '@types/command-line-args':
+        specifier: ^5.2.3
+        version: 5.2.3
+      '@types/command-line-usage':
+        specifier: ^5.0.4
+        version: 5.0.4
+      '@types/didyoumean':
+        specifier: ^1.2.2
+        version: 1.2.2
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
+      '@types/node':
+        specifier: ^20.12.12
+        version: 20.12.12
       '@types/remove-markdown':
         specifier: 0.3.4
         version: 0.3.4
