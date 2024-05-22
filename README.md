@@ -13,9 +13,9 @@ A helpful wrapper around [command-line-args](https://www.npmjs.com/package/comma
 ## Installation
 
 ```sh
-yarn add command-line-application
+yarn add @liplum/cli
 # or
-npm i --save command-line-application
+npm i --save @liplum/cli
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm i --save command-line-application
 ### A simple single command app
 
 ```ts
-import { app, Command } from 'command-line-application';
+import { app, Command } from '@liplum/cli';
 
 const echo: Command = {
   name: 'echo',
@@ -50,7 +50,7 @@ console.log(args);
 ### Complex examples
 
 ```ts
-import app, { Command } from 'command-line-application';
+import app, { Command } from '@liplum/cli';
 
 const echo: Command = {
   examples: [{ example: 'echo foo', desc: 'The default use case' }],
@@ -63,7 +63,7 @@ const echo: Command = {
 You can even nest multi-commands!
 
 ```ts
-import app, { Command } from 'command-line-application';
+import app, { Command } from '@liplum/cli';
 
 const test: Command = { ... };
 const lint: Command = { ... };
@@ -191,7 +191,7 @@ const args = app(echo, { camelCase: false });
 
 ### error
 
-Configure how `command-line-application` reports errors.
+Configure how `@liplum/cli` reports errors.
 
 - exit - (default) print error message and exit process
 - throw - throw error message
