@@ -1,6 +1,6 @@
 {
   "name": "@liplum/cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A helpful wrapper around command-line-args and command-line-usage",
   "main": "dist/index.js",
   "type": "module",
