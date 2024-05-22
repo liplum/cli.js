@@ -9,7 +9,13 @@
   "files": [
     "dist"
   ],
-  "repository": "liplum/cli.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liplum/cli.js.git"
+  },
   "author": "Liplum <Li_plum@outlook.com>",
   "scripts": {
     "build": "tsc",
@@ -20,7 +26,6 @@
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
     "didyoumean": "^1.2.2",
-    "meant": "^2.0.1",
     "remove-markdown": "^0.5.0",
     "tslib": "2.6.2"
   },
@@ -35,5 +40,13 @@
     "strip-ansi": "7.1.0",
     "tsdx": "0.14.1",
     "typescript": "5.4.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/liplum/cli.js/issues"
+  },
+  "homepage": "https://github.com/liplum/cli.js#readme",
+  "keywords": [
+    "cli",
+    "command-line-args"
+  ]
 }
