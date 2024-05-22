@@ -2,7 +2,7 @@
 
 A helpful wrapper around [command-line-args](https://www.npmjs.com/package/command-line-args) and [command-line-usage](https://www.npmjs.com/package/command-line-usage).
 
-- Easily define single or multi-command CLI application
+- Easily define single or multi-command CLI program
 - Adds required options
 - Suggests possible fixes for typos in flags or sub-commands
 - Built in `--help` flag
@@ -20,10 +20,10 @@ npm i --save @liplum/cli
 
 ## Usage
 
-### A simple single command app
+### A simple single cli program
 
 ```ts
-import { app, Command } from '@liplum/cli';
+import { cli, Command } from '@liplum/cli';
 
 const echo: Command = {
   name: 'echo',
@@ -40,7 +40,7 @@ const echo: Command = {
   ]
 };
 
-const args = app(echo);
+const args = cli(echo);
 
 // $ echo foo
 console.log(args);
@@ -50,7 +50,7 @@ console.log(args);
 ### Complex examples
 
 ```ts
-import app, { Command } from '@liplum/cli';
+import cli, { Command } from '@liplum/cli';
 
 const echo: Command = {
   examples: [{ example: 'echo foo', desc: 'The default use case' }],
@@ -63,7 +63,7 @@ const echo: Command = {
 You can even nest multi-commands!
 
 ```ts
-import app, { Command } from '@liplum/cli';
+import cli, { Command } from '@liplum/cli';
 
 const test: Command = { ... };
 const lint: Command = { ... };
@@ -73,7 +73,7 @@ const scripts: MultiCommand = {
   commands: [test, lint]
 };
 
-const args = app(scripts);
+const args = cli(scripts);
 
 // $ scripts test --fix
 console.log(args);
@@ -170,7 +170,7 @@ const echo: Command = {
 Provide `argv` manually.
 
 ```ts
-const args = app(echo, { argv: ['--help'] });
+const args = cli(echo, { argv: ['--help'] });
 ```
 
 ### showHelp
@@ -178,7 +178,7 @@ const args = app(echo, { argv: ['--help'] });
 Whether to show the help dialog. Defaults to `true`
 
 ```ts
-const args = app(echo, { showHelp: false });
+const args = cli(echo, { showHelp: false });
 ```
 
 ### camelCase
@@ -186,7 +186,7 @@ const args = app(echo, { showHelp: false });
 Whether to camelCase the parsed options. Defaults to `true`
 
 ```ts
-const args = app(echo, { camelCase: false });
+const args = cli(echo, { camelCase: false });
 ```
 
 ### error
