@@ -20,9 +20,6 @@ importers:
       didyoumean:
         specifier: ^1.2.2
         version: 1.2.2
-      meant:
-        specifier: ^2.0.1
-        version: 2.0.1
       remove-markdown:
         specifier: ^0.5.0
         version: 0.5.0
@@ -2659,9 +2656,6 @@ packages:
   map-visit@1.0.0:
     resolution: {integrity: sha512-4y7uGv8bd2WdM9vpQsiQNo41Ln1NvhvDRuVt0k2JZQ+ezN2uaQes7lZeZ+QQUHOLQAtDaBJ+7wCbi+ab/KFs+w==}
     engines: {node: '>=0.10.0'}
-
-  meant@2.0.1:
-    resolution: {integrity: sha512-ujdpKVtGk2bJJnQHaJknSjuE7955b55kO8v+1bEScXsy3H/vagnOAiUXTzb/kTRHbDVdY0Kc6PS3jHLYo8RpvA==}
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -7127,8 +7121,6 @@ snapshots:
   map-visit@1.0.0:
     dependencies:
       object-visit: 1.0.1
-
-  meant@2.0.1: {}
 
   merge-stream@2.0.0: {}
 

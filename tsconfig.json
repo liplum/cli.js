@@ -1,7 +1,4 @@
 {
-  "include": [
-    "src"
-  ],
   "compilerOptions": {
     "target": "ES2022",
     "module": "ES2022",
@@ -26,5 +23,8 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "esModuleInterop": true
-  }
+  },
+  "include": [
+    "src"
+  ],
 }
