@@ -1,6 +1,6 @@
 {
   "name": "@liplum/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helpful wrapper around command-line-args and command-line-usage",
   "main": "dist/index.js",
   "type": "module",
@@ -25,6 +25,8 @@
     "chalk": "^5.3.0",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
+    "@types/command-line-args": "^5.2.3",
+    "@types/command-line-usage": "^5.0.4",
     "didyoumean": "^1.2.2",
     "remove-markdown": "^0.5.0",
     "tslib": "2.6.2"
@@ -32,8 +34,6 @@
   "devDependencies": {
     "@types/jest": "29.5.12",
     "@types/remove-markdown": "0.3.4",
-    "@types/command-line-args": "^5.2.3",
-    "@types/command-line-usage": "^5.0.4",
     "@types/didyoumean": "^1.2.2",
     "@types/node": "^20.12.12",
     "jest-snapshot-serializer-ansi": "2.1.0",
