@@ -1,4 +1,4 @@
-import { cli, Command, MultiCommand } from '../src';
+import { cli, Command, MultiCommand } from '../dist/index.js';
 import stripAnsi from 'strip-ansi';
 
 beforeEach(() => {
