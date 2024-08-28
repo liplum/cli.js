@@ -48,5 +48,6 @@
   "keywords": [
     "cli",
     "command-line-args"
-  ]
+  ],
+  "packageManager": "pnpm@9.9.0"
 }
