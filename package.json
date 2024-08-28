@@ -39,7 +39,7 @@
     "jest-snapshot-serializer-ansi": "2.1.0",
     "strip-ansi": "7.1.0",
     "tsdx": "0.14.1",
-    "typescript": "5.4.5"
+    "typescript": "5.5.4"
   },
   "bugs": {
     "url": "https://github.com/liplum/cli.js/issues"
