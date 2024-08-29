@@ -40,8 +40,8 @@ importers:
         specifier: 29.5.12
         version: 29.5.12
       '@types/node':
-        specifier: ^20.12.12
-        version: 20.12.12
+        specifier: ^22.5.1
+        version: 22.5.1
       '@types/remove-markdown':
         specifier: 0.3.4
         version: 0.3.4
@@ -53,7 +53,7 @@ importers:
         version: 7.1.0
       tsdx:
         specifier: 0.14.1
-        version: 0.14.1(@types/babel__core@7.20.5)(@types/node@20.12.12)
+        version: 0.14.1(@types/babel__core@7.20.5)(@types/node@22.5.1)
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -855,6 +855,9 @@ packages:
 
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+
+  '@types/node@22.5.1':
+    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3630,6 +3633,9 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
   unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
     engines: {node: '>=4'}
@@ -4699,7 +4705,10 @@ snapshots:
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - utf-8-validate
 
   '@jest/transform@25.5.1':
     dependencies:
@@ -4878,6 +4887,10 @@ snapshots:
   '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
+
+  '@types/node@22.5.1':
+    dependencies:
+      undici-types: 6.19.8
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -7631,13 +7644,13 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-sourcemaps@0.6.3(@types/node@20.12.12)(rollup@1.32.1):
+  rollup-plugin-sourcemaps@0.6.3(@types/node@22.5.1)(rollup@1.32.1):
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@1.32.1)
       rollup: 1.32.1
       source-map-resolve: 0.6.0
     optionalDependencies:
-      '@types/node': 20.12.12
+      '@types/node': 22.5.1
 
   rollup-plugin-terser@5.3.1(rollup@1.32.1):
     dependencies:
@@ -8108,7 +8121,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsdx@0.14.1(@types/babel__core@7.20.5)(@types/node@20.12.12):
+  tsdx@0.14.1(@types/babel__core@7.20.5)(@types/node@22.5.1):
     dependencies:
       '@babel/core': 7.24.5
       '@babel/helper-module-imports': 7.24.3
@@ -8156,7 +8169,7 @@ snapshots:
       progress-estimator: 0.2.2
       regenerator-runtime: 0.13.11
       rollup: 1.32.1
-      rollup-plugin-sourcemaps: 0.6.3(@types/node@20.12.12)(rollup@1.32.1)
+      rollup-plugin-sourcemaps: 0.6.3(@types/node@22.5.1)(rollup@1.32.1)
       rollup-plugin-terser: 5.3.1(rollup@1.32.1)
       rollup-plugin-typescript2: 0.27.3(rollup@1.32.1)(typescript@3.9.10)
       sade: 1.8.1
@@ -8257,6 +8270,8 @@ snapshots:
       which-boxed-primitive: 1.0.2
 
   undici-types@5.26.5: {}
+
+  undici-types@6.19.8: {}
 
   unicode-canonical-property-names-ecmascript@2.0.0: {}
 
