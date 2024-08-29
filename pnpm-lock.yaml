@@ -28,7 +28,7 @@ importers:
         version: 1.2.2
       remove-markdown:
         specifier: ^0.5.0
-        version: 0.5.0
+        version: 0.5.2
       tslib:
         specifier: 2.7.0
         version: 2.7.0
@@ -3045,8 +3045,8 @@ packages:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
 
-  remove-markdown@0.5.0:
-    resolution: {integrity: sha512-x917M80K97K5IN1L8lUvFehsfhR8cYjGQ/yAMRI9E7JIKivtl5Emo5iD13DhMr+VojzMCiYk8V2byNPwT/oapg==}
+  remove-markdown@0.5.2:
+    resolution: {integrity: sha512-/VOt3snBKnK66TIiomtmCptc8V0aSVDBHtihWrL1ZVrVoCtvQx7Chs4yfP37JaxZTxE3SEmJTIN8pzrO/+XPlg==}
 
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
@@ -4699,7 +4699,10 @@ snapshots:
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - utf-8-validate
 
   '@jest/transform@25.5.1':
     dependencies:
@@ -7536,7 +7539,7 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
-  remove-markdown@0.5.0: {}
+  remove-markdown@0.5.2: {}
 
   remove-trailing-separator@1.1.0: {}
 
