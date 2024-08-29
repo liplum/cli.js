@@ -35,7 +35,7 @@
     "@types/jest": "29.5.12",
     "@types/remove-markdown": "0.3.4",
     "@types/didyoumean": "^1.2.2",
-    "@types/node": "^20.12.12",
+    "@types/node": "^22.5.1",
     "jest-snapshot-serializer-ansi": "2.1.0",
     "strip-ansi": "7.1.0",
     "tsdx": "0.14.1",
