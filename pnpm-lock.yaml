@@ -41,7 +41,7 @@ importers:
         version: 29.5.12
       '@types/node':
         specifier: ^22.5.1
-        version: 22.5.2
+        version: 22.7.4
       '@types/remove-markdown':
         specifier: 0.3.4
         version: 0.3.4
@@ -53,7 +53,7 @@ importers:
         version: 7.1.0
       tsdx:
         specifier: 0.14.1
-        version: 0.14.1(@types/babel__core@7.20.5)(@types/node@22.5.2)
+        version: 0.14.1(@types/babel__core@7.20.5)(@types/node@22.7.4)
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -849,8 +849,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.5.2':
-    resolution: {integrity: sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==}
+  '@types/node@22.7.4':
+    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4674,10 +4674,7 @@ snapshots:
       jest-runner: 25.5.4
       jest-runtime: 25.5.4
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - utf-8-validate
 
   '@jest/transform@25.5.1':
     dependencies:
@@ -4712,7 +4709,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
@@ -4822,7 +4819,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
 
   '@types/istanbul-lib-coverage@2.0.6': {}
 
@@ -4853,7 +4850,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.5.2':
+  '@types/node@22.7.4':
     dependencies:
       undici-types: 6.19.8
 
@@ -4867,7 +4864,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
 
   '@types/stack-utils@1.0.1': {}
 
@@ -6862,7 +6859,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -7605,13 +7602,13 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-sourcemaps@0.6.3(@types/node@22.5.2)(rollup@1.32.1):
+  rollup-plugin-sourcemaps@0.6.3(@types/node@22.7.4)(rollup@1.32.1):
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@1.32.1)
       rollup: 1.32.1
       source-map-resolve: 0.6.0
     optionalDependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
 
   rollup-plugin-terser@5.3.1(rollup@1.32.1):
     dependencies:
@@ -7639,7 +7636,7 @@ snapshots:
   rollup@1.32.1:
     dependencies:
       '@types/estree': 1.0.5
-      '@types/node': 22.5.2
+      '@types/node': 22.7.4
       acorn: 7.4.1
 
   rsvp@4.8.5: {}
@@ -8075,7 +8072,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsdx@0.14.1(@types/babel__core@7.20.5)(@types/node@22.5.2):
+  tsdx@0.14.1(@types/babel__core@7.20.5)(@types/node@22.7.4):
     dependencies:
       '@babel/core': 7.24.5
       '@babel/helper-module-imports': 7.24.3
@@ -8123,7 +8120,7 @@ snapshots:
       progress-estimator: 0.2.2
       regenerator-runtime: 0.13.11
       rollup: 1.32.1
-      rollup-plugin-sourcemaps: 0.6.3(@types/node@22.5.2)(rollup@1.32.1)
+      rollup-plugin-sourcemaps: 0.6.3(@types/node@22.7.4)(rollup@1.32.1)
       rollup-plugin-terser: 5.3.1(rollup@1.32.1)
       rollup-plugin-typescript2: 0.27.3(rollup@1.32.1)(typescript@3.9.10)
       sade: 1.8.1
